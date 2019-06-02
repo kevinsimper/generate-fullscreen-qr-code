@@ -1,6 +1,7 @@
 function generateQR() {
+  let size = Math.min(window.innerWidth, window.innerHeight) * 0.9
   const qrCodeSetting = {
-    size: document.body.clientWidth,
+    size: size,
     ecLevel: QrCode.ecLevel.QUARTILE,
     minVersion: 8,
     background: "#fff",
